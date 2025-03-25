@@ -1,0 +1,32 @@
+name: LaunchPad
+version: 1.0.0
+main: org.tonydev.launchpad.LaunchPad
+api-version: '1.21'
+description: Create and manage launchpads with templates and custom properties
+author: TonyDev
+
+commands:
+  launchpad:
+    description: Main command for the LaunchPad plugin
+    usage: |
+      /launchpad create <name> <horizontal> <vertical> [fall-immunity] [block-type]
+      /launchpad template create <name> <horizontal> <vertical> [fall-immunity] [block-type]
+      /launchpad template remove <name>
+      /launchpad template info <name>
+      /launchpad template
+      /launchpad set <template-name>
+      /launchpad cancel
+      /launchpad remove [name]
+      /launchpad list
+      /launchpad info <name>
+      /launchpad reload
+    aliases: [lp]
+    permission: launchpad.admin
+
+permissions:
+  launchpad.admin:
+    description: Allows creating and managing launch pads and templates
+    default: op
+  launchpad.use:
+    description: Allows using launch pads
+    default: true

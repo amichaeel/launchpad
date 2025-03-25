@@ -1,0 +1,49 @@
+# LaunchPad Configuration
+
+# Default settings for the plugin
+default-settings:
+  # Default material for launchpad blocks if not specified when creating
+  launchpad-material: SLIME_BLOCK
+  
+  # Whether to check permissions for using launchpads
+  use-permission: true
+  
+  # Permission node required to use launchpads
+  permission-node: launchpad.use
+  
+  # Whether to play sounds when launched
+  play-sounds: true
+  
+  # Whether to show particles when launched
+  show-particles: true
+  
+  # Sound to play when launched (Minecraft sound name)
+  launch-sound: ENTITY_ENDER_DRAGON_FLAP
+  
+  # Particle type to display when launched
+  launch-particle: CLOUD
+
+  # Default fall damage immunity duration in seconds
+  # Set to 0 to disable fall damage immunity by default
+  default-fall-damage-immunity: 3
+
+# Templates for launchpads (automatically managed by the plugin)
+# Format:
+# templates:
+#   template-name:
+#     horizontal-strength: 1.5
+#     vertical-strength: 0.5
+#     fall-damage-immunity: 3
+#     block-type: SLIME_BLOCK
+templates: {}
+
+# List of all launchpads (automatically managed by the plugin)
+# Format:
+# launchpads:
+#   worldName,x,y,z:
+#     name: LaunchpadName
+#     horizontal-strength: 1.5
+#     vertical-strength: 0.5
+#     fall-damage-immunity: 3
+#     block-type: SLIME_BLOCK
+launchpads: {}
